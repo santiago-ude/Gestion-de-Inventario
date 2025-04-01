@@ -11,3 +11,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.Map;
+
+@RestController
+@RequestMapping("/products")
+public class ProductController {
+
+
+    @Autowired
+    ProductService PS;
