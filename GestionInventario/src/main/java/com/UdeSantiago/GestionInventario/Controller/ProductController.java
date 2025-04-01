@@ -19,3 +19,9 @@ public class ProductController {
 
     @Autowired
     ProductService PS;
+
+
+    @GetMapping
+    public ResponseEntity<?> getProducts(){
+        return ResponseEntity.ok(PS.getProducts());
+    }
