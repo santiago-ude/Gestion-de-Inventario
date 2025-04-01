@@ -31,3 +31,17 @@ public class ProductController {
         return ResponseEntity.ok(PS.getProductById(id));
     }
 
+
+    @PostMapping
+    public ResponseEntity<?> postProduct(@Valid @RequestBody Product newProduct){
+
+        Product aux = PS.postProduct(newProduct);
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(newProduct.getId())
+                .toUri();
+
+        return ResponseEntity.created(location).build();
+    }
