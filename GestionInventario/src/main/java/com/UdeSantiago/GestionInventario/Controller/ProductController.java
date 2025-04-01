@@ -25,3 +25,9 @@ public class ProductController {
     public ResponseEntity<?> getProducts(){
         return ResponseEntity.ok(PS.getProducts());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getProducts(@PathVariable Long id){
+        return ResponseEntity.ok(PS.getProductById(id));
+    }
+
