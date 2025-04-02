@@ -45,3 +45,29 @@ public class ProductController {
 
         return ResponseEntity.created(location).build();
     }
+
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> putProduct(@PathVariable long id, @Valid @RequestBody ProductDTO newProduct){
+
+        Product aux = PS.putProduct(id,newProduct);
+        return ResponseEntity.ok(aux);
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> patchProduct(@PathVariable long id, @Valid @RequestBody Map<String, Object> newProduct){
+
+        Product aux = PS.patchProduct(id, newProduct);
+        return ResponseEntity.ok(aux);
+
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<?> deleteProduct(@PathVariable long id){
+
+        PS.deleteProduct(id);
+        return ResponseEntity.noContent().build();
+    }
+
+
+}
