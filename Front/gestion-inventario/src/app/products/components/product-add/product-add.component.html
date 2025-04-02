@@ -1,0 +1,66 @@
+<section>
+    <fieldset>
+        <legend>Alta Presupuesto</legend>
+
+        <form [formGroup]="formulario" (ngSubmit)="addProduct()">
+            
+            <!--Name-->
+            <label for="name">Nombre:</label>
+            <input type="text" formControlName="name">
+
+            <div *ngIf="formulario.controls['name'].touched && formulario.controls['name'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <!--Description-->
+            <label for="description">Descripcion:</label>
+            <textarea name="Descripcion" id="description" formControlName="description"></textarea>
+
+            <div *ngIf="formulario.controls['description'].touched && formulario.controls['description'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <!--Price-->
+            <label for="price">Precio:</label>
+            <input type="number" formControlName="price">
+
+            <div *ngIf="formulario.controls['price'].touched && formulario.controls['price'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <!--Stock-->
+            <label for="stock">Stock:</label>
+            <input type="number" formControlName="stock">
+
+            <div *ngIf="formulario.controls['stock'].touched && formulario.controls['stock'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <!--Brand-->
+            <label for="brand">Marca:</label>
+            <input type="text" formControlName="brand">
+
+            <div *ngIf="formulario.controls['brand'].touched && formulario.controls['brand'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <!--ImageUrl-->
+            <label for="imageUrl">Url de la imagen:</label>
+            <input type="text" formControlName="imageUrl">
+
+            <div *ngIf="formulario.controls['imageUrl'].touched && formulario.controls['imageUrl'].invalid" class="error">
+                Campo Requerido
+            </div>
+            <!------->
+
+            <button type="submit" [disabled]="!formulario.valid">Agregar Presupuesto</button>
+
+        </form>
+
+    </fieldset>
+</section>
