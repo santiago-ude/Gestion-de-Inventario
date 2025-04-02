@@ -1,0 +1,42 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+header{
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu a{
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.menu a:hover{
+    background-color: black;
+    color: khaki;
+}
