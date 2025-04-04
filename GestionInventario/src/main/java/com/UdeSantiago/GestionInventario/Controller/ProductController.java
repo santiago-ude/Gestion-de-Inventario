@@ -48,7 +48,7 @@ public class ProductController {
 
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> putProduct(@PathVariable long id, @Valid @RequestBody ProductDTO newProduct){
+    public ResponseEntity<?> putProduct(@PathVariable long id, @Valid @RequestBody Product newProduct){
 
         Product aux = PS.putProduct(id,newProduct);
         return ResponseEntity.ok(aux);
