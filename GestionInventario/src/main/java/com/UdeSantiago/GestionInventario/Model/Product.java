@@ -1,20 +1,16 @@
 package com.UdeSantiago.GestionInventario.Model;
 
 
-import com.UdeSantiago.GestionInventario.Enum.Categoria;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tbl_product")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Product {
 
 
@@ -44,15 +40,12 @@ public class Product {
     private Integer stock;
 
     @NotBlank(message = "La marca es obligatoria")
-    @Column(name = "marca_product")
-    private String marca;
     @Column(name = "brand_product")
     private String brand;
 
     @Pattern(regexp = "^(http|https)://.*$", message = "La URL de la imagen debe ser válida")
     @Column(name = "imageUrl_product")
     private String imageUrl;
-    
 
     public Product() {
     }
