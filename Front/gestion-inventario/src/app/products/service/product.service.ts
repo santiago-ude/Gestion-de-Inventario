@@ -11,3 +11,13 @@ export class ProductService {
 
    private apiUrl = "http://localhost:8080/inventoryManagment/api/v1/products";
 
+  constructor(private http : HttpClient) { }
+
+
+//GET
+getProducts() : Observable<Product[]>{
+  return this.http.get<Product[]>(this.apiUrl).pipe(catchError(this.handleError));
+}
+
+//GETById
+getProductById(id : Number) : Observable<Product>{
