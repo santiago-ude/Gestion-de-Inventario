@@ -35,7 +35,7 @@ public class ProductService {
     return PR.save(newProduct);
     }
 
-    public Product putProduct(Long id, ProductDTO newProduct){
+    public Product putProduct(Long id, Product newProduct){
 
         return PR.findById(id)
                 .map(aux -> {
