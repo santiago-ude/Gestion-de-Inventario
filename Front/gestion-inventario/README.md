@@ -23,3 +23,10 @@ ng generate component component-name
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
 ```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
