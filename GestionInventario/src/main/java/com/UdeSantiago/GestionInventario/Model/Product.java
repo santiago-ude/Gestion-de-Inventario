@@ -46,6 +46,8 @@ public class Product {
     @NotBlank(message = "La marca es obligatoria")
     @Column(name = "marca_product")
     private String marca;
+    @Column(name = "brand_product")
+    private String brand;
 
     @Pattern(regexp = "^(http|https)://.*$", message = "La URL de la imagen debe ser válida")
     @Column(name = "imageUrl_product")
@@ -106,5 +108,13 @@ public class Product {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
