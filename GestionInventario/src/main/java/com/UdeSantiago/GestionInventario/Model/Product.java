@@ -51,4 +51,22 @@ public class Product {
     @Column(name = "imageUrl_product")
     private String imageUrl;
     
+
+    public Product() {
+    }
+
+    public Product(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this.brand = brand;
+        this.imageUrl = imageUrl;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
 }
