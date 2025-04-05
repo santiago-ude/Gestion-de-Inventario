@@ -36,3 +36,9 @@ putProduct(product : Product, id : Number) : Observable<Product>{
 //PATCH
 patchProduct(updateData: Partial<Product>, id : Number) : Observable<Product>{
   return this.http.patch<Product>(`${this.apiUrl}/${id}`, updateData).pipe(catchError(this.handleError));
+}
+
+//DELETE
+deleteProduct(id : Number) : Observable<Product>{
+  return this.http.delete<Product>(`${this.apiUrl}/${id}`).pipe(catchError(this.handleError));
+}
