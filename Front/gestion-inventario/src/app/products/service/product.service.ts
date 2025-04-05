@@ -20,3 +20,6 @@ getProducts() : Observable<Product[]>{
 
 //GETById
 getProductById(id : Number) : Observable<Product>{
+  return this.http.get<Product>(`${this.apiUrl}/${id}`).pipe(catchError(this.handleError));
+}
+
