@@ -23,3 +23,7 @@ getProductById(id : Number) : Observable<Product>{
   return this.http.get<Product>(`${this.apiUrl}/${id}`).pipe(catchError(this.handleError));
 }
 
+//POST
+postProduct(product : Product) : Observable<Product>{
+  return this.http.post<Product>(this.apiUrl, product).pipe(catchError(this.handleError));
+}
