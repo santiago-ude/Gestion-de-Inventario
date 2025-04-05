@@ -44,4 +44,13 @@ PS = inject(ProductService);
   }
 
   updateProduct() {
+    if (this.formulario.invalid) return;
+
+    const updatedProduct = this.formulario.getRawValue();
+    this.PS.putProduct(updatedProduct, this.productToEdit.id!).subscribe(() => {
+      this.updated.emit(); // le avisa al padre que se actualizó
+      this.closed.emit();  // cierra el modal
+    });
+  }
+
 }
