@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-update',
-  imports: [],
+  standalone: true,
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './product-update.component.html',
   styleUrl: './product-update.component.css'
 })
