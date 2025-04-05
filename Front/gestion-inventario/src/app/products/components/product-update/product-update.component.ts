@@ -53,4 +53,9 @@ PS = inject(ProductService);
     });
   }
 
+  close() {
+    this.closed.emit();
+  }
+
+
 }
