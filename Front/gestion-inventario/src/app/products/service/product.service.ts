@@ -32,3 +32,7 @@ postProduct(product : Product) : Observable<Product>{
 putProduct(product : Product, id : Number) : Observable<Product>{
   return this.http.put<Product>(`${this.apiUrl}/${id}`, product).pipe(catchError(this.handleError));
 }
+
+//PATCH
+patchProduct(updateData: Partial<Product>, id : Number) : Observable<Product>{
+  return this.http.patch<Product>(`${this.apiUrl}/${id}`, updateData).pipe(catchError(this.handleError));
