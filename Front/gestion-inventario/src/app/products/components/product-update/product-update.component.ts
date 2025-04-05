@@ -37,4 +37,11 @@ PS = inject(ProductService);
         description: this.productToEdit.description,
         price: this.productToEdit.price,
         stock: this.productToEdit.stock,
+        brand: this.productToEdit.brand,
+        imageUrl: this.productToEdit.imageUrl,
+      });
+    }
+  }
+
+  updateProduct() {
 }
