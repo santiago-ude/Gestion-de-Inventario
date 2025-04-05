@@ -6,3 +6,11 @@ import { ProductAddComponent } from './products/components/product-add/product-a
 import { ProductUpdateComponent } from './products/components/product-update/product-update.component';
 
 @Component({
+  selector: 'app-root',
+  imports: [MenuComponent, HttpClientModule,RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'gestion-inventario';
+}
