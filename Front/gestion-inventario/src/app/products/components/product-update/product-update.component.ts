@@ -32,4 +32,9 @@ PS = inject(ProductService);
 
   ngOnInit() {
     if (this.productToEdit) {
+      this.formulario.setValue({
+        name: this.productToEdit.name,
+        description: this.productToEdit.description,
+        price: this.productToEdit.price,
+        stock: this.productToEdit.stock,
 }
