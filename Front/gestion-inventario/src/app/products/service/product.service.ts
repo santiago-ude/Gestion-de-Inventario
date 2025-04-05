@@ -42,3 +42,11 @@ patchProduct(updateData: Partial<Product>, id : Number) : Observable<Product>{
 deleteProduct(id : Number) : Observable<Product>{
   return this.http.delete<Product>(`${this.apiUrl}/${id}`).pipe(catchError(this.handleError));
 }
+
+
+
+private handleError(error: HttpErrorResponse): Observable<never> {
+  console.error('Error en el servicio de Productos:', error);
+  return throwError(() => new Error('Error en la solicitud del servidor'));
+}
+}
