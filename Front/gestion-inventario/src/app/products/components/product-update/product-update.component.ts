@@ -13,4 +13,23 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductUpdateComponent {
 
+
+FB = inject(FormBuilder);
+PS = inject(ProductService);
+
+  @Input() productToEdit!: Product;
+  @Output() closed = new EventEmitter<void>();
+  @Output() updated = new EventEmitter<void>();
+
+  formulario = this.FB.nonNullable.group({
+    name: ['', Validators.required],
+    description: ['', Validators.required],
+    price: [0, Validators.required],
+    stock: [0, Validators.required],
+    brand: ['', Validators.required],
+    imageUrl: ['', Validators.required],
+  });
+
+  ngOnInit() {
+    if (this.productToEdit) {
 }
