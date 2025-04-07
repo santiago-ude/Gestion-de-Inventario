@@ -3,4 +3,6 @@ import { ProductAddComponent } from './products/components/product-add/product-a
 import { ProductListComponent } from './products/components/product-list/product-list.component';
 import { ProductUpdateComponent } from './products/components/product-update/product-update.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+
+    {path: '', component: ProductListComponent},
