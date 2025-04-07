@@ -37,3 +37,14 @@ label{
         margin: 10px 0 5px;
         font-weight: 600;
         color: #333;
+}
+
+input[type="text"], input[type="date"],input[type="number"], select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
