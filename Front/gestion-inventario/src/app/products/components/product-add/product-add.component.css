@@ -1,0 +1,26 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+section{
+    margin-top: 20px;
+}
+
+form{
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    text-align: cen;  
+}
+
+legend{
+    font-size: 1.5rem;
