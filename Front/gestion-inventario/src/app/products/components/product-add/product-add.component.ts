@@ -8,7 +8,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   selector: 'app-product-add',
   imports: [ReactiveFormsModule, CommonModule, HttpClientModule],
   templateUrl: './product-add.component.html',
-  styleUrl: './product-add.component.css'
+  styleUrl: './product-add.component.css',
+  standalone: true
 })
 export class ProductAddComponent {
 
