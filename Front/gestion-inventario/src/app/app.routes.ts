@@ -6,3 +6,7 @@ import { ProductUpdateComponent } from './products/components/product-update/pro
 export const routes: Routes = [
 
     {path: '', component: ProductListComponent},
+    {path: 'addProduct', component: ProductAddComponent},
+    {path: 'listProducts', component: ProductListComponent},
+    {path: 'updateProduct', component: ProductUpdateComponent},
+];
