@@ -10,7 +10,7 @@ a{
 }
 
 header{
-    background-color: khaki;
+    background-color: rgb(133, 193, 233);
     display: flex;
     justify-content: space-between;
     align-items: center;
