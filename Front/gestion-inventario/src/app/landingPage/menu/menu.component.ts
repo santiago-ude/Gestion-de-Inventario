@@ -5,7 +5,8 @@ import { RouterLink, RouterModule } from '@angular/router';
   selector: 'app-menu',
   imports: [RouterModule],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+  styleUrl: './menu.component.css',
+  standalone: true
 })
 export class MenuComponent {
 
