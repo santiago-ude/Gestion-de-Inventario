@@ -59,3 +59,11 @@ textarea{
     color: red;
     font-size: 0.875rem;
     margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+button{
+    background-color: orangered;
+    color: white;
