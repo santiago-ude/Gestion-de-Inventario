@@ -48,3 +48,14 @@ input[type="text"], input[type="date"],input[type="number"], select, textarea{
     font-size: 1rem;
 }
 
+textarea{
+    resize: vertical;
+    min-height: 100px;
+    width: 100%;
+}
+
+
+.error{
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -10px;
