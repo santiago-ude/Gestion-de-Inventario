@@ -15,3 +15,12 @@ section{
     font-size: 30px;
 }
 
+
+.filter-container{
+    width: 40%;
+    height: 200px;
+    margin: 0 auto;;
+    background-color: azure;
+    padding: 5px;
+}
+
