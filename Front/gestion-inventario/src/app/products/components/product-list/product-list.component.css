@@ -1,0 +1,17 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    background-color: rgb(133, 193, 233);
+    width: 90%;
+    min-height: 780px;
+    margin: 10px auto;
+}
+
+.title-product{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
