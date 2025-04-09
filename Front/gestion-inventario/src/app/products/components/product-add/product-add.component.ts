@@ -14,11 +14,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class ProductAddComponent {
 
 
-  @Output()
-  emitirProduct: EventEmitter<Product> = new EventEmitter();
-
 FB = inject(FormBuilder);
 
+PS = inject(ProductService);
 
 
 formulario = this.FB.nonNullable.group(
@@ -31,6 +29,8 @@ formulario = this.FB.nonNullable.group(
     imageUrl : ["", [Validators.required]]
   }
 )
+
+
 addProduct = () =>{
 
   console.log(this.formulario.errors); // Verifica si hay errores generales
@@ -43,11 +43,13 @@ addProduct = () =>{
 
 
   const product = this.formulario.getRawValue();
+
+  this.PS.postProduct(product).subscribe({
+    next: () => alert("Producto Agregado exitosamente"),
+    error: (error) => console.error("Error al agregar un producto: " + error)
+  })
+
   this.formulario.reset();
 
-  this.emitirProduct.emit(product);
-
 }
-
-
 }
