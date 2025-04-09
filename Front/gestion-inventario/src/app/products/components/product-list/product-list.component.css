@@ -28,3 +28,14 @@ section{
     display: block;
     text-align: center;
 }
+
+.list-container{
+    width: 90%;
+    background-color: azure;
+    min-height: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
