@@ -24,3 +24,7 @@ section{
     padding: 5px;
 }
 
+.filter-container h3{
+    display: block;
+    text-align: center;
+}
