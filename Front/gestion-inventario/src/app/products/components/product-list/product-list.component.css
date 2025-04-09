@@ -101,3 +101,13 @@ section{
     margin-top: 10px;
   }
   
+  .stock-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
