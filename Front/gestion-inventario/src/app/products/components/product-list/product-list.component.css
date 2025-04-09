@@ -111,3 +111,12 @@ section{
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
+  
+  .stock-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .stock-value {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
