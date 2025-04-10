@@ -13,4 +13,8 @@ import { ProductUpdateComponent } from '../product-update/product-update.compone
 })
 export class ProductListComponent {
 
+  ngOnInit(): void {
+    this.traerProducts();
+  } 
+
 }
