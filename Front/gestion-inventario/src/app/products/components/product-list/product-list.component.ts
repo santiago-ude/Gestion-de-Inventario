@@ -7,7 +7,7 @@ import { ProductUpdateComponent } from '../product-update/product-update.compone
 
 @Component({
   selector: 'app-product-list',
-  imports: [],
+  imports: [CommonModule, ProductUpdateComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
