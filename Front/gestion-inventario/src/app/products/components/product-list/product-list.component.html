@@ -18,3 +18,7 @@
                 <p><strong>Nombre: </strong>{{prod.name}}</p>
                 <p><strong>Descripcion: </strong>{{prod.description}}</p>
                 <p><strong>Precio: $</strong>{{prod.price}}</p>
+                <p><strong>Marca: </strong>{{prod.brand}}</p>
+                <button class="update-btn" (click)="openEditModal(prod)">Actualizar Producto</button>
+                <!--Agregar un (click)="updateProduct()"-->
+            </div>
