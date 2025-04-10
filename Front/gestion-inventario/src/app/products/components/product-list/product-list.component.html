@@ -9,3 +9,7 @@
     </div>
 
     <div class="list-container">
+        <div class="product-card" *ngFor="let prod of productList; trackBy: trackByIndex">
+            <div class="image-container">
+                <img [src]="prod.imageUrl" alt="ImagenProducto">
+            </div>
