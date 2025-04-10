@@ -31,3 +31,6 @@
                 <button class="stock-btn-increase" (click)="increaseStock(prod)">+</button>
                 <!--Agregar un (click)="decreateStock()"-->
             </div>
+        </div>
+        <app-product-update *ngIf="showModal" 
+            [productToEdit]="productToEdit" 
