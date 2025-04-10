@@ -34,3 +34,6 @@
         </div>
         <app-product-update *ngIf="showModal" 
             [productToEdit]="productToEdit" 
+            (closed)="closeEditModal()"
+            (updated)="recargarLista()">
+        </app-product-update>
