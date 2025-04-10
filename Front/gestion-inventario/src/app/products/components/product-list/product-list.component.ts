@@ -17,4 +17,8 @@ export class ProductListComponent {
     this.traerProducts();
   } 
 
+
+  showModal = false;
+
+  productToEdit!: Product;
 }
