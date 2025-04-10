@@ -30,4 +30,9 @@ export class ProductListComponent {
   traerProducts(){
     return this.PS.getProducts().subscribe({
       next: (list) => this.productList = list
+    })
+  }
+
+  closeEditModal() {
+    this.showModal = false;
 }
