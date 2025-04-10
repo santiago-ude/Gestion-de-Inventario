@@ -40,4 +40,9 @@ export class ProductListComponent {
   recargarLista() {
     this.traerProducts(); // o como tengas tu lógica de fetch
   }
+
+  openEditModal(product: Product) {
+    this.productToEdit = product;
+    this.showModal = true;
+  }
 }
