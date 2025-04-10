@@ -35,4 +35,9 @@ export class ProductListComponent {
 
   closeEditModal() {
     this.showModal = false;
+  }
+
+  recargarLista() {
+    this.traerProducts(); // o como tengas tu lógica de fetch
+  }
 }
