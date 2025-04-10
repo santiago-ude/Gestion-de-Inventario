@@ -21,4 +21,9 @@ export class ProductListComponent {
   showModal = false;
 
   productToEdit!: Product;
+
+  productList : Product[] = [];
+
+  PS = inject(ProductService);
+
 }
