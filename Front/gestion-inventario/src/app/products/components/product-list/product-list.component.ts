@@ -26,4 +26,8 @@ export class ProductListComponent {
 
   PS = inject(ProductService);
 
+
+  traerProducts(){
+    return this.PS.getProducts().subscribe({
+      next: (list) => this.productList = list
 }
