@@ -45,4 +45,8 @@ export class ProductListComponent {
     this.productToEdit = product;
     this.showModal = true;
   }
+
+
+
+  
 }
