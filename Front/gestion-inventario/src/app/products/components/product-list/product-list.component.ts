@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { Product } from '../../interface/product';
+import { ProductService } from '../../service/product.service';
+import { RouterLink } from '@angular/router';
+import { ProductUpdateComponent } from '../product-update/product-update.component';
 
 @Component({
   selector: 'app-product-list',
