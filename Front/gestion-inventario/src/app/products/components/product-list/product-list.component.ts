@@ -53,6 +53,9 @@ export class ProductListComponent {
     
     const updateProduct = { stock: product.stock + 1};
 
+      },
+      error: (err) => console.error("Error al actualizar el stock: " + err)
+    });
   }
 }
 
