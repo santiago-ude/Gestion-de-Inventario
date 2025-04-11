@@ -53,6 +53,9 @@ export class ProductListComponent {
     
     const updateProduct = { stock: product.stock + 1};
 
+    this.PS.patchProduct(updateProduct, product.id).subscribe({
+      next: (updateProd) => {
+        product.stock = updateProd.stock; //actualizamos en el front
       },
       error: (err) => console.error("Error al actualizar el stock: " + err)
     });
