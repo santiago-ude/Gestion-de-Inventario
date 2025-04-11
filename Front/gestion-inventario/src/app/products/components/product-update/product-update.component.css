@@ -1,6 +1,9 @@
 .modal-backdrop {
     position: fixed;
     top: 0;
+    cursor: pointer;
+  }
+  *{
     font-family: Helvetica, sans-serif;
 }
 
