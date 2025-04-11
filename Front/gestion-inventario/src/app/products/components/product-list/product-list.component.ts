@@ -49,4 +49,7 @@ export class ProductListComponent {
 
 
   
+  increaseStock(product : any) {
+    
+    const updateProduct = { stock: product.stock + 1};
 }
