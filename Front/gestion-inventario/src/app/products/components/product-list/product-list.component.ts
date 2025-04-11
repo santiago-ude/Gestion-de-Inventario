@@ -52,6 +52,9 @@ export class ProductListComponent {
   increaseStock(product : any) {
     
     const updateProduct = { stock: product.stock + 1};
+   //Optimizar el seguimiento de los elementos dentro del ngFor
+   trackByIndex(index: number, item: any): number {
+    return index;
   }
 
 
