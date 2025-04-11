@@ -53,6 +53,9 @@ export class ProductListComponent {
     
     const updateProduct = { stock: product.stock + 1};
 
+decreaseStock(product :  any){
+  
+  if(Number(product.stock) != 0){
 
   const updateProduct = { stock: product.stock - 1};
 
