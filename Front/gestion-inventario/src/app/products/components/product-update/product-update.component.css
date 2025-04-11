@@ -1,6 +1,9 @@
 .modal-backdrop {
     position: fixed;
     top: 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
   }
   *{
