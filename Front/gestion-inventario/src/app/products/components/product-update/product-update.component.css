@@ -4,6 +4,7 @@
     margin-top: 16px;
   }
   
+  .modal-buttons button {
     padding: 8px 12px;
     border: none;
     border-radius: 6px;
