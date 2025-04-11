@@ -1,6 +1,9 @@
 .modal-backdrop {
     position: fixed;
     top: 0;
+    justify-content: center;
+    z-index: 1000;
+  }
   
   .modal-content {
     background-color: white;
