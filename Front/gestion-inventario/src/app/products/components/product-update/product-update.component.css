@@ -40,6 +40,9 @@ section{
     margin-top: 20px;
 }
 
+        color: #333;
+}
+
 input[type="text"], input[type="date"],input[type="number"], select, textarea{
     width: 100%;
     padding: 8px;
