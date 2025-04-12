@@ -40,6 +40,9 @@ section{
     margin-top: 20px;
 }
 
+    font-size: 1rem;
+}
+
 textarea{
     resize: vertical;
     min-height: 100px;
