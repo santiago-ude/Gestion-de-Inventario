@@ -40,6 +40,9 @@ section{
     margin-top: 20px;
 }
 
+}
+
+label{
         display: block;
         margin: 10px 0 5px;
         font-weight: 600;
