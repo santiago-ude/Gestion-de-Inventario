@@ -40,6 +40,9 @@ section{
     margin-top: 20px;
 }
 
+button{
+    background-color: orangered;
+    color: white;
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
