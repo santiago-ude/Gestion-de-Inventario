@@ -40,6 +40,9 @@ section{
     margin-top: 20px;
 }
 
+}
+
+button:hover{
     background-color: rgb(184, 87, 53);
 }
 
