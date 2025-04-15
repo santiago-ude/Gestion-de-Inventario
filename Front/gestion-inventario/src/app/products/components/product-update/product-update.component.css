@@ -62,6 +62,8 @@ legend{
     color: orange;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    border-bottom: 2px solid orange;
+    margin: 0 auto;
 label{
         display: block;
         margin: 10px 0 5px;
