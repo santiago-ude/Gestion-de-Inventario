@@ -50,6 +50,8 @@ form{
     margin: 20px auto;
 }
 
+fieldset{
+    border: none;
 label{
         display: block;
         margin: 10px 0 5px;
