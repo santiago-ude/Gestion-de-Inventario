@@ -49,8 +49,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
