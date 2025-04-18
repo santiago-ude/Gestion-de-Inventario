@@ -13,6 +13,7 @@ public class ConfigSwagger {
     public OpenAPI customOpenAPI(){
                         .title("API gestion de productos")
                         .version("1.0.0")
+                        .description("API elaborada para la gestion de productos, dentro de una app de gestion de inventario general")
                         .contact(new Contact()
                                 .name("Santiago Ude")
                                 .email("santiagoude8@gmail.com")
