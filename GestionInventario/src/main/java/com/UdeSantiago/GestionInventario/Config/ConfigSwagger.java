@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigSwagger {
 
+                        .contact(new Contact()
+                                .name("Santiago Ude")
                                 .email("santiagoude8@gmail.com")
                                 .url("https://github.com/santiago-ude")));
     }
