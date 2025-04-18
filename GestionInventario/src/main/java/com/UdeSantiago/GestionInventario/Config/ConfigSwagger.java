@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigSwagger {
 
     public OpenAPI customOpenAPI(){
+        return new OpenAPI()
                 .info(new Info()
                         .title("API gestion de productos")
                         .version("1.0.0")
