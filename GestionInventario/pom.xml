@@ -56,8 +56,6 @@
 		</dependency>
 
 		<!--LOMBOK-->
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 		<!--CONEXION CON SQL-->
