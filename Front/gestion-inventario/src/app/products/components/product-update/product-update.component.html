@@ -6,6 +6,7 @@
         <form [formGroup]="formulario" (ngSubmit)="updateProduct()">
             
             <!--Name-->
+            <input type="text" formControlName="imageUrl">
 
             <div *ngIf="formulario.controls['imageUrl'].touched && formulario.controls['imageUrl'].invalid" class="error">
                 Campo Requerido
