@@ -6,6 +6,7 @@
         <form [formGroup]="formulario" (ngSubmit)="updateProduct()">
             
             <!--Name-->
+            <label for="price">Precio:</label>
             <input type="number" formControlName="price">
 
             <div *ngIf="formulario.controls['price'].touched && formulario.controls['price'].invalid" class="error">
