@@ -6,6 +6,7 @@
         <form [formGroup]="formulario" (ngSubmit)="updateProduct()">
             
             <!--Name-->
+            <label for="description">Descripcion:</label>
             <textarea name="Descripcion" id="description" formControlName="description"></textarea>
 
             <div *ngIf="formulario.controls['description'].touched && formulario.controls['description'].invalid" class="error">
