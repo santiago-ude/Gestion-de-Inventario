@@ -6,6 +6,7 @@
         <form [formGroup]="formulario" (ngSubmit)="updateProduct()">
             
             <!--Name-->
+            <div *ngIf="formulario.controls['description'].touched && formulario.controls['description'].invalid" class="error">
                 Campo Requerido
             </div>
             <!------->
