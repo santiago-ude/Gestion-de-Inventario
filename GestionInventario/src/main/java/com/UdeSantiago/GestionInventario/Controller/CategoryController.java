@@ -41,3 +41,10 @@ public class CategoryController {
                 .buildAndExpand(newCategory.getId())
                 .toUri();
 
+        return ResponseEntity.created(location).build();
+    }
+
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> putCategory(@PathVariable Long id, @Valid @RequestBody Category newCategory){
+
