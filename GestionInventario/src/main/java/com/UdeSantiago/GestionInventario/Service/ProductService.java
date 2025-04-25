@@ -1,6 +1,11 @@
 package com.UdeSantiago.GestionInventario.Service;
 
-import com.UdeSantiago.GestionInventario.Model.ProductDTO;
+
+import com.UdeSantiago.GestionInventario.Model.Category;
+import com.UdeSantiago.GestionInventario.Model.ProductRequestDTO;
+import com.UdeSantiago.GestionInventario.Model.Supplier;
+import com.UdeSantiago.GestionInventario.Repository.CategoryRepository;
+import com.UdeSantiago.GestionInventario.Repository.SupplierRepository;
 import org.springframework.util.ReflectionUtils;
 import com.UdeSantiago.GestionInventario.Exception.ResourceNotFoundException;
 import com.UdeSantiago.GestionInventario.Model.Product;
@@ -20,6 +25,12 @@ public class ProductService {
     @Autowired
     ProductRepository PR;
 
+    @Autowired
+    CategoryRepository CR;
+
+    @Autowired
+    SupplierRepository SR;
+
     public List<Product> getProducts(){
         return PR.findAll();
     }
@@ -30,9 +41,32 @@ public class ProductService {
                 .orElseThrow(() -> new ResourceNotFoundException("Producto con ID " + id + " no encontrado"));
     }
 
-    public Product postProduct(Product newProduct){
+    public Product postProduct(ProductRequestDTO dto){
 
-    return PR.save(newProduct);
+        // Validar categoría
+        Long categoryId = dto.getCategoryId();
+        Category category = CR.findById(categoryId)
+                .orElseThrow(() -> new ResourceNotFoundException("Categoría con ID " + categoryId + " no encontrada"));
+
+        // Validar proveedor
+        Long supplierId = dto.getSupplierId();
+        Supplier supplier = SR.findById(supplierId)
+                .orElseThrow(() -> new ResourceNotFoundException("Proveedor con ID " + supplierId + " no encontrado"));
+
+        // Asignar entidades verificadas
+
+        Product newProduct = new Product();
+
+        newProduct.setCategory(category);
+        newProduct.setSupplier(supplier);
+        newProduct.setImageUrl(dto.getImageUrl());
+        newProduct.setStock(dto.getStock());
+        newProduct.setPrice(dto.getPrice());
+        newProduct.setName(dto.getName());
+        newProduct.setDescription(dto.getDescription());
+        newProduct.setBrand(dto.getBrand());
+
+        return PR.save(newProduct);
     }
 
     public Product putProduct(Long id, Product newProduct){
