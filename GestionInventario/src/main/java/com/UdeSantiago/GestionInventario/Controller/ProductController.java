@@ -34,7 +34,7 @@ public class ProductController {
 
 
     @PostMapping
-    public ResponseEntity<?> postProduct(@Valid @RequestBody Product newProduct){
+    public ResponseEntity<?> postProduct(@Valid @RequestBody ProductRequestDTO newProduct){
 
         Product aux = PS.postProduct(newProduct);
 
