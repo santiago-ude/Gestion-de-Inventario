@@ -40,3 +40,8 @@ public class SupplierController {
                 .buildAndExpand(newSupplier.getId())
                 .toUri();
 
+        return ResponseEntity.created(location).build();
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> putSupplier(@PathVariable Long id, @Valid @RequestBody Supplier newSupplier){
