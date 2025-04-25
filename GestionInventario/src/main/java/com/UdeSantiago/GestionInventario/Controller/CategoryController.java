@@ -19,3 +19,10 @@ public class CategoryController {
     CategoryService CS;
 
 
+    @GetMapping
+    public ResponseEntity<?> getCategories(){
+        return ResponseEntity.ok(CS.getCategories());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getCategoryById(@PathVariable Long id){
