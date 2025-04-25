@@ -25,3 +25,8 @@ public class SupplierController {
     }
 
     @GetMapping("/{id}")
+    public ResponseEntity<?> getSupplierById(@PathVariable Long id){
+        return ResponseEntity.ok(SS.getSupplierById(id));
+    }
+
+    @PostMapping
