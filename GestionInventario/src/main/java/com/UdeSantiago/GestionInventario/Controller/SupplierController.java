@@ -13,3 +13,9 @@ import java.net.URI;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/suppliers")
+public class SupplierController {
+
+    @Autowired
+    SupplierService SS;
+
