@@ -58,3 +58,7 @@ public class SupplierController {
 
         return ResponseEntity.ok(aux);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteSupplier(@PathVariable Long id){
+
