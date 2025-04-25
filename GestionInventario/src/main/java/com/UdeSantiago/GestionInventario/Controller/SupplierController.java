@@ -52,3 +52,9 @@ public class SupplierController {
     }
 
     @PatchMapping("/{id}")
+    public ResponseEntity<?> patchSupplier(@PathVariable Long id, @Valid @RequestBody Map<String, Object> newSupplier){
+
+        Supplier aux = SS.patchSupplier(id,newSupplier);
+
+        return ResponseEntity.ok(aux);
+    }
