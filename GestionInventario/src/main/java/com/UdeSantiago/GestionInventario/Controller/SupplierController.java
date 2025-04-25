@@ -30,3 +30,8 @@ public class SupplierController {
     }
 
     @PostMapping
+    public ResponseEntity<?> postSupplier(@RequestBody Supplier newSupplier){
+
+        Supplier aux = SS.postSupplier(newSupplier);
+
+        URI location = ServletUriComponentsBuilder
