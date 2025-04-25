@@ -65,3 +65,5 @@ public class SupplierController {
         SS.deleteSupplier(id);
         return ResponseEntity.noContent().build();
     }
+
+}
