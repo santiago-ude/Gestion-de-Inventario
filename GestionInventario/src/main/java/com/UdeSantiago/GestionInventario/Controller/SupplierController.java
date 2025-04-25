@@ -45,3 +45,10 @@ public class SupplierController {
 
     @PutMapping("/{id}")
     public ResponseEntity<?> putSupplier(@PathVariable Long id, @Valid @RequestBody Supplier newSupplier){
+
+        Supplier aux = SS.putSupplier(id,newSupplier);
+
+        return ResponseEntity.ok(aux);
+    }
+
+    @PatchMapping("/{id}")
