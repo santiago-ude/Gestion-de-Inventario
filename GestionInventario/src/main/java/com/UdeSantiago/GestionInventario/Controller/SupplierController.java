@@ -35,3 +35,8 @@ public class SupplierController {
         Supplier aux = SS.postSupplier(newSupplier);
 
         URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(newSupplier.getId())
+                .toUri();
+
