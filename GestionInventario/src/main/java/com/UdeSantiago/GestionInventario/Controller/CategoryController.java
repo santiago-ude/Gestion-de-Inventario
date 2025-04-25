@@ -12,3 +12,10 @@ import java.net.URI;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/categories")
+public class CategoryController {
+
+    @Autowired
+    CategoryService CS;
+
+
