@@ -26,3 +26,9 @@ public class CategoryController {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getCategoryById(@PathVariable Long id){
+        return ResponseEntity.ok(CS.getCategoryById(id));
+    }
+
+
+    @PostMapping
+    public ResponseEntity<?> postCategory(@Valid @RequestBody Category newCategory){
