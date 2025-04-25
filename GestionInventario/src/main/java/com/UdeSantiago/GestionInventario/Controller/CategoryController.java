@@ -58,3 +58,8 @@ public class CategoryController {
 
         Category aux = CS.patchCategory(id,newCategory);
         return ResponseEntity.ok(aux);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteCategory(@PathVariable Long id){
+
