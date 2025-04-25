@@ -52,3 +52,9 @@ public class CategoryController {
 
         return ResponseEntity.ok(aux);
     }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> patchCategory(@PathVariable Long id, @Valid @RequestBody Map<String, Object> newCategory){
+
+        Category aux = CS.patchCategory(id,newCategory);
+        return ResponseEntity.ok(aux);
