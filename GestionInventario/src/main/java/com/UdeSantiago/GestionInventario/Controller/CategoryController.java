@@ -37,3 +37,7 @@ public class CategoryController {
 
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(newCategory.getId())
+                .toUri();
+
