@@ -32,3 +32,8 @@ public class CategoryController {
 
     @PostMapping
     public ResponseEntity<?> postCategory(@Valid @RequestBody Category newCategory){
+
+        Category aux = CS.postCategory(newCategory);
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
