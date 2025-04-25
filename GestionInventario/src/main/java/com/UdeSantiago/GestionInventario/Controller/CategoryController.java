@@ -48,3 +48,7 @@ public class CategoryController {
     @PutMapping("/{id}")
     public ResponseEntity<?> putCategory(@PathVariable Long id, @Valid @RequestBody Category newCategory){
 
+        Category aux = CS.putCategory(id,newCategory);
+
+        return ResponseEntity.ok(aux);
+    }
