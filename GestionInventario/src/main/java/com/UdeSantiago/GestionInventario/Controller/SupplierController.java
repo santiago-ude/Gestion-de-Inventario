@@ -19,3 +19,9 @@ public class SupplierController {
     @Autowired
     SupplierService SS;
 
+    @GetMapping
+    public ResponseEntity<?> getSuppliers(){
+        return ResponseEntity.ok(SS.getSuppliers());
+    }
+
+    @GetMapping("/{id}")
