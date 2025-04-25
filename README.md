@@ -72,7 +72,8 @@ http://localhost:8080/inventoryManagment/api/v1/swagger-ui/index.html
 
 ## 📄 Documentación Swagger
 
-> (Aquí podés insertar una captura de Swagger cuando puedas subir la imagen)
+![image](https://github.com/user-attachments/assets/488b57a9-5cb5-4a31-a19f-483a9c016d42)
+
 
 ---
 
