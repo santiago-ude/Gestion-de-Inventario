@@ -1,18 +1,15 @@
 package com.UdeSantiago.GestionInventario.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tbl_product")
-
 public class Product {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,16 +44,27 @@ public class Product {
     @Column(name = "imageUrl_product")
     private String imageUrl;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier ;
+
+
     public Product() {
     }
 
-    public Product(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl) {
+    public Product(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl, Category category, Supplier supplier) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.stock = stock;
         this.brand = brand;
         this.imageUrl = imageUrl;
+        this.category = category;
+        this.supplier = supplier;
     }
 
     public Long getId() {
@@ -109,5 +117,21 @@ public class Product {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Supplier getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
     }
 }
