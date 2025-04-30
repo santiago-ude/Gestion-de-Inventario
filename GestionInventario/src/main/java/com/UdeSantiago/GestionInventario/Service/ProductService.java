@@ -39,6 +39,9 @@ public class ProductService {
         return PR.findByCategoryId(idCategory);
     }
 
+    public List<Product> getProductBySupplier(Long idSupplier){
+        return PR.findBySupplierId(idSupplier);
+    }
 
     public Product getProductById(Long id){
         return PR.findById(id)
