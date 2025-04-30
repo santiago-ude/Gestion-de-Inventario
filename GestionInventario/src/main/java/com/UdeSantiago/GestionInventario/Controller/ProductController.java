@@ -33,6 +33,10 @@ public class ProductController {
     }
 
     @GetMapping("/supplier/{idSupplier}")
+    public ResponseEntity<?> getProductsBySupplier(@PathVariable Long idSupplier){
+        return ResponseEntity.ok(PS.getProductBySupplier(idSupplier));
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<?> getProducts(@PathVariable Long id){
         return ResponseEntity.ok(PS.getProductById(id));
