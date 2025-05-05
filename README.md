@@ -4,7 +4,7 @@ Este proyecto es una **API REST** desarrollada con Spring Boot que permite reali
 
 ## 🛠 Tecnologías utilizadas
 
-- Jav
+- Ja
 - Spring Boot
 - Spring Data JPA
 - MySQL
