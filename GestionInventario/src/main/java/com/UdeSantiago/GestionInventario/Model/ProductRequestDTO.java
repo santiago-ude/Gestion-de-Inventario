@@ -16,7 +16,5 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-
-    public String getName() {
     
 }
