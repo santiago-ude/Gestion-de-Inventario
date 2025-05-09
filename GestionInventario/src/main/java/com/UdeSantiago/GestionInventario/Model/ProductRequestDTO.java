@@ -59,7 +59,4 @@ public class ProductRequestDTO {
         this.categoryId = categoryId;
     }
 
-    public void setSupplierId(Long supplierId) {
-        this.supplierId = supplierId;
-    }
 }
