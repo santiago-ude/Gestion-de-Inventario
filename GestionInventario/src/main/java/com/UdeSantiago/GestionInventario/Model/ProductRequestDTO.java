@@ -17,6 +17,8 @@ public class ProductRequestDTO {
     }
 
     
+        this.imageUrl = imageUrl;
+        this.categoryId = categoryId;
         this.supplierId = supplierId;
     }
 
