@@ -25,9 +25,5 @@ public class ProductRequestDTO {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     
 }
