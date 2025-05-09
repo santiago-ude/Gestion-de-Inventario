@@ -49,11 +49,5 @@ public class ProductRequestDTO {
         this.stock = stock;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
-
-
     
 }
