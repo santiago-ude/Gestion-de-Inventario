@@ -55,14 +55,6 @@ public class ProductRequestDTO {
 
 
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public Long getCategoryId() {
-        return categoryId;
-    }
-
     public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
