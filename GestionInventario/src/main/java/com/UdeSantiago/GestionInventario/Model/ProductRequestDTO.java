@@ -16,7 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-    
     public ProductRequestDTO(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl, Long categoryId, Long supplierId) {
         this.name = name;
         this.description = description;
