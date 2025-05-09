@@ -33,9 +33,5 @@ public class ProductRequestDTO {
         this.description = description;
     }
 
-    public BigDecimal getPrice() {
-        return price;
-    }
-
     
 }
