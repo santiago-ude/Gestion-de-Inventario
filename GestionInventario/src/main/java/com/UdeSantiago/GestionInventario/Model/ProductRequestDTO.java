@@ -41,9 +41,5 @@ public class ProductRequestDTO {
         this.price = price;
     }
 
-    public Integer getStock() {
-        return stock;
-    }
-
     
 }
