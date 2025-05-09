@@ -17,6 +17,10 @@ public class ProductRequestDTO {
     }
 
     
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     public Long getCategoryId() {
         return categoryId;
     }
