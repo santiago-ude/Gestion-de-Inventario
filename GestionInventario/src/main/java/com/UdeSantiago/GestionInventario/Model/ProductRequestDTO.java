@@ -37,9 +37,5 @@ public class ProductRequestDTO {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
     
 }
