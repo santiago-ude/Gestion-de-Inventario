@@ -16,6 +16,8 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+
+        return brand;
     }
 
     public void setBrand(String brand) {
