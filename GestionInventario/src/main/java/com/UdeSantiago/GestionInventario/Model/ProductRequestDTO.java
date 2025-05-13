@@ -67,7 +67,5 @@ public class ProductRequestDTO {
 
     public String getImageUrl() {
         return imageUrl;
-    }
-
     
 }
