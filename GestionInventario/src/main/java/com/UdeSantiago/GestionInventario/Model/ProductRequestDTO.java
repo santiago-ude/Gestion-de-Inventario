@@ -70,7 +70,5 @@ public class ProductRequestDTO {
     }
 
     public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
     
 }
