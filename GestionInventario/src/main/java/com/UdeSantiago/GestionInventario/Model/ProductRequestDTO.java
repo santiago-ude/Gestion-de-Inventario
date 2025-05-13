@@ -74,7 +74,5 @@ public class ProductRequestDTO {
     }
 
     public Long getCategoryId() {
-        return categoryId;
-    }
     
 }
