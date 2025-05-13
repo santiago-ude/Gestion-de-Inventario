@@ -16,6 +16,9 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+    }
+
+    public Integer getStock() {
         return stock;
     }
 
