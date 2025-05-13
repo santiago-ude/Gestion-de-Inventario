@@ -58,8 +58,5 @@ public class ProductRequestDTO {
     }
 
     public String getBrand() {
-        return brand;
-    }
-
     
 }
