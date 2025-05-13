@@ -16,6 +16,9 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+        this.brand = brand;
+    }
+
     public String getImageUrl() {
         return imageUrl;
     }
