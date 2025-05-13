@@ -16,6 +16,8 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+    public BigDecimal getPrice() {
+        return price;
     }
 
     public void setPrice(BigDecimal price) {
