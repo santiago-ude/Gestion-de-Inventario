@@ -52,7 +52,5 @@ public class ProductRequestDTO {
     public Integer getStock() {
         return stock;
     }
-
-    public void setStock(Integer stock) {
     
 }
