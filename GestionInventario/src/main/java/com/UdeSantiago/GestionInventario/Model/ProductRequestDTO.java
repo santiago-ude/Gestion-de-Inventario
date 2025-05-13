@@ -16,4 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+        this.supplierId = supplierId;
+    }
 }
