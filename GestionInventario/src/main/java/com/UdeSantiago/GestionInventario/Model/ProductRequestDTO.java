@@ -48,7 +48,5 @@ public class ProductRequestDTO {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
-
-    public Integer getStock() {
     
 }
