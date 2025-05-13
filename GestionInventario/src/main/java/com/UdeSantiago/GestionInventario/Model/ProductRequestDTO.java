@@ -17,6 +17,8 @@ public class ProductRequestDTO {
     }
     
 
+    public void setStock(Integer stock) {
+        this.stock = stock;
     }
 
     public String getBrand() {
