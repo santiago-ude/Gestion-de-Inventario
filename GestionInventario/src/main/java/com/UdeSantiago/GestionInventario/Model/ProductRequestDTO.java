@@ -16,6 +16,8 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public BigDecimal getPrice() {
