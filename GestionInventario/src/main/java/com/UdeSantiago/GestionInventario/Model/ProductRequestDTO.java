@@ -65,7 +65,5 @@ public class ProductRequestDTO {
         this.brand = brand;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
     
 }
