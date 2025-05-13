@@ -16,6 +16,9 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
     
+        return categoryId;
+    }
+
     public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
