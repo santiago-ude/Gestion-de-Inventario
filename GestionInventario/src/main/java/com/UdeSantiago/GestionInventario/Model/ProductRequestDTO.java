@@ -16,10 +16,5 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        return supplierId;
-    }
-
-    public void setSupplierId(Long supplierId) {
-        this.supplierId = supplierId;
-    }
+    
 }
