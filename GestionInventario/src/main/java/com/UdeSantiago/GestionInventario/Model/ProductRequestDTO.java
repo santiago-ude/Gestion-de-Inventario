@@ -16,8 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        return name;
-    }
 
     public void setName(String name) {
         this.name = name;
