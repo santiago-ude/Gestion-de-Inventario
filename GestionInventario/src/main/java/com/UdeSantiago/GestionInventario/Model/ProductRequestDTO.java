@@ -16,9 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        this.price = price;
-        this.stock = stock;
-        this.brand = brand;
         this.imageUrl = imageUrl;
         this.categoryId = categoryId;
         this.supplierId = supplierId;
