@@ -71,4 +71,7 @@ public class ProductRequestDTO {
         return imageUrl;
     }
 
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 }
