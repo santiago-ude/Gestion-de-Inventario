@@ -16,9 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        this.imageUrl = imageUrl;
-        this.categoryId = categoryId;
-        this.supplierId = supplierId;
     }
 
     public String getName() {
