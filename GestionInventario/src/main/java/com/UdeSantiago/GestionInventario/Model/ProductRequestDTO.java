@@ -16,10 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-    public Integer getStock() {
-        return stock;
-    }
-
     public void setStock(Integer stock) {
         this.stock = stock;
     }
