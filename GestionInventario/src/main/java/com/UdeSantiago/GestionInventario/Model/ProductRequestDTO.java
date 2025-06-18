@@ -16,9 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        this.imageUrl = imageUrl;
-    }
-
     public Long getCategoryId() {
         return categoryId;
     }
