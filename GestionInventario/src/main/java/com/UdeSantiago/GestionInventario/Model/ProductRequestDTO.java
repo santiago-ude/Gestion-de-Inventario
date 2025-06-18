@@ -75,4 +75,11 @@ public class ProductRequestDTO {
         this.imageUrl = imageUrl;
     }
 
+    public Long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
 }
