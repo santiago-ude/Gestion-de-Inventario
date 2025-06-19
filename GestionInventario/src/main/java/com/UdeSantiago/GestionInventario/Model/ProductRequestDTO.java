@@ -16,9 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-
-    public void setBrand(String brand) {
-        this.brand = brand;
     }
 
     public String getImageUrl() {
