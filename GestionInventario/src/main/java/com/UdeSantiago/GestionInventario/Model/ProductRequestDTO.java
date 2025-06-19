@@ -16,9 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-    public String getBrand() {
-        return brand;
-    }
 
     public void setBrand(String brand) {
         this.brand = brand;
