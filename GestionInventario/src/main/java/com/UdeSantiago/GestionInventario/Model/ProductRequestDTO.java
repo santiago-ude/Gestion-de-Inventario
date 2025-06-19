@@ -16,14 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-        this.description = description;
-        this.price = price;
-        this.stock = stock;
-        this.brand = brand;
-        this.imageUrl = imageUrl;
-        this.categoryId = categoryId;
-        this.supplierId = supplierId;
-    }
 
     public String getName() {
         return name;
