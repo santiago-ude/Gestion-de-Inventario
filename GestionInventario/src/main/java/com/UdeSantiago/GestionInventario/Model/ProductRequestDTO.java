@@ -16,16 +16,6 @@ public class ProductRequestDTO {
     public ProductRequestDTO() {
     }
 
-    public ProductRequestDTO(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl, Long categoryId, Long supplierId) {
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.stock = stock;
-        this.brand = brand;
-        this.imageUrl = imageUrl;
-        this.categoryId = categoryId;
-        this.supplierId = supplierId;
-    }
 
     public String getName() {
         return name;
@@ -87,7 +77,4 @@ public class ProductRequestDTO {
         return supplierId;
     }
 
-    public void setSupplierId(Long supplierId) {
-        this.supplierId = supplierId;
-    }
 }
