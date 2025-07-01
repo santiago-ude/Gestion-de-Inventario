@@ -42,6 +42,10 @@ public class ProductRequestDTO {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
     public void setSupplierId(Long supplierId) {
         this.supplierId = supplierId;
     }
