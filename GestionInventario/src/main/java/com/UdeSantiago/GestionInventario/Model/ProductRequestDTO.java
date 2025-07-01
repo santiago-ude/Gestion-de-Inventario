@@ -17,9 +17,4 @@ public class ProductRequestDTO {
     }
 
 
-
-    public Long getSupplierId() {
-        return supplierId;
-    }
-
 }
