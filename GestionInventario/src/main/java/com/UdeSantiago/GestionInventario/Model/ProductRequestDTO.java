@@ -62,6 +62,10 @@ public class ProductRequestDTO {
     public String getBrand() {
         return brand;
     }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
     public void setSupplierId(Long supplierId) {
         this.supplierId = supplierId;
     }
