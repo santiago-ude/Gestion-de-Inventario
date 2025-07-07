@@ -1,12 +1,4 @@
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
