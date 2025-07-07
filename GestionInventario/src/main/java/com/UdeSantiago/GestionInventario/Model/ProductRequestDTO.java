@@ -78,3 +78,11 @@ public class ProductRequestDTO {
     public Long getCategoryId() {
         return categoryId;
     }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Long getSupplierId() {
+        return supplierId;
+    }
