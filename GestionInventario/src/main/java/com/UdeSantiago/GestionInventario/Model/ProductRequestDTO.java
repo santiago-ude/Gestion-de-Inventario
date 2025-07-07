@@ -12,3 +12,17 @@ public class ProductRequestDTO {
     private String imageUrl;
     private Long categoryId;
     private Long supplierId;
+
+    public ProductRequestDTO() {
+    }
+
+    public ProductRequestDTO(String name, String description, BigDecimal price, Integer stock, String brand, String imageUrl, Long categoryId, Long supplierId) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this.brand = brand;
+        this.imageUrl = imageUrl;
+        this.categoryId = categoryId;
+        this.supplierId = supplierId;
+    }
